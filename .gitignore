@@ -1,44 +1,33 @@
-# Virtual Environment
-venv/
-env/
-ENV/
-.venv/
-
-# Byte-compiled / optimized files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+*.so
 
-# Environment variables & local secrets
+# Virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Environment variables and secrets
 .env
-.env.local
+.env.*
+!.env.example
+.streamlit/secrets.toml
 
-# Testing and caching
-.pytest_cache/
-.coverage
-htmlcov/
+# Streamlit
+.streamlit/credentials.toml
 
-# Saved models and serialized artifacts
-models/*.pkl
-models/*.joblib
-models/*.onnx
-models/*.h5
-!models/.gitkeep
-
-# Generated results, metrics, and charts
-results/charts/*.png
-results/charts/*.jpg
-results/charts/*.svg
-results/*.json
-results/*.csv
-!results/.gitkeep
-!results/charts/.gitkeep
-
-# IDE and OS files
-.vscode/
-.idea/
-*.swp
-*.swo
-Thumbs.db
-Desktop.ini
+# Mac
 .DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp

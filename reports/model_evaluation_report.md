@@ -23,7 +23,7 @@
 | Model | Accuracy | Precision (pos_label=1) | Recall (pos_label=1) | F1-Score (pos_label=1) |
 |---|---|---|---|---|
 | **Decision Tree Classifier** | **0.6040** (60.4%) | 0.5756 (57.6%) | **0.6266** (62.7%) | **0.6000** |
-| **Random Forest Classifier** | 0.5860 (58.6%) | **0.5802** (58.0%) | 0.4578 (45.8%) | 0.5118 |
+| **Random Forest Classifier** | 0.5840 (58.4%) | **0.5780** (57.8%) | 0.4536 (45.4%) | 0.5083 |
 
 ### Confusion Matrix Breakdown (Test Set: n=1,000)
 
@@ -36,15 +36,15 @@
 #### Random Forest Classifier:
 - **True Negatives (TN):** 369
 - **False Positives (FP):** 157
-- **False Negatives (FN):** 257
-- **True Positives (TP):** 217
+- **False Negatives (FN):** 259
+- **True Positives (TP):** 215
 
 ### Classifier Comparison Analysis:
 1. **Decision Tree Classifier Advantages:**
-   - Achieved superior **Recall (62.7%)** compared to Random Forest (45.8%). In educational early-warning systems, **Recall is paramount** because failing to identify a struggling student (False Negative) has far higher consequences than providing support to a passing student (False Positive).
+   - Achieved superior **Recall (62.7%)** compared to Random Forest (45.4%). In educational early-warning systems, **Recall is paramount** because failing to identify a struggling student (False Negative) has far higher consequences than providing support to a passing student (False Positive).
    - Higher overall **F1-Score (0.6000)** and **Accuracy (60.4%)**.
 2. **Random Forest Classifier Characteristics:**
-   - Showed higher specificity/precision (58.0%), producing fewer false alarms, but missed 257 at-risk students (FN).
+   - Showed higher specificity/precision (57.8%), producing fewer false alarms, but missed 257 at-risk students (FN).
 
 ---
 
